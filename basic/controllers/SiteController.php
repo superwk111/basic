@@ -103,22 +103,43 @@ class SiteController extends Controller
         );
     }
 
-//    public function actions()
-//    {
-//        return [
-//            'error' => [
-//                'class' => 'yii\web\ErrorAction',
-//            ],
-//            'captcha' => [
-//                'class' => 'yii\caption\CaptchaAction',
-//                'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
-//            ],
-//            'pages'=>[
-//                'class' => 'yii\web\ViewAction',
-//            ],
-//
-//        ];
-//    }
+    public function actionInfo()
+    {
+        return $this->render('info');
+    }
+
+    public function actions()
+    {
+        return [
+            'error' => [
+                'class' => 'yii\web\ErrorAction',
+            ],
+            'captcha' => [
+                'class' => 'yii\caption\CaptchaAction',
+                'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
+            ],
+            'pages'=>[
+                'class' => 'yii\web\ViewAction',
+            ],
+
+        ];
+    }
+
+    public function actions()
+    {
+        return [
+            'error' => [
+                'class' => 'yii\web\ErrorAction',
+            ],
+            'captcha' => [
+                'class' => 'yii\captcha\CaptchaAction',
+                'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
+            ],
+            'pages' => [
+                'class' => 'yii\web\ViewAction',
+            ],
+        ];
+    }
 //
 //    public function actions()
 //    {
