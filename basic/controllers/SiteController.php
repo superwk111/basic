@@ -103,31 +103,31 @@ class SiteController extends Controller
         );
     }
 
-    public function actions()
-    {
-        return [
-            'error' => [
-                'class' => 'yii\web\ErrorAction',
-            ],
-            'captcha' => [
-                'class' => 'yii\caption\CaptchaAction',
-                'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
-            ],
-            'pages'=>[
-                'class' => 'yii\web\ViewAction',
-            ],
-
-        ];
-    }
-
-    public function actions()
-    {
-        return[
-            'pages' =>[
-                'class'=>'yii\web\ViewAction',
-            ],
-        ];
-    }
+//    public function actions()
+//    {
+//        return [
+//            'error' => [
+//                'class' => 'yii\web\ErrorAction',
+//            ],
+//            'captcha' => [
+//                'class' => 'yii\caption\CaptchaAction',
+//                'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
+//            ],
+//            'pages'=>[
+//                'class' => 'yii\web\ViewAction',
+//            ],
+//
+//        ];
+//    }
+//
+//    public function actions()
+//    {
+//        return[
+//            'pages' =>[
+//                'class'=>'yii\web\ViewAction',
+//            ],
+//        ];
+//    }
 }
 
 
