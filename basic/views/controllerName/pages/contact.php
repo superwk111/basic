@@ -6,4 +6,5 @@
  * Time: 17:44
  */
 ?>
-To contact us,please write to info@example.com
+
+<p>To contact us,please write to info@example.com</p>

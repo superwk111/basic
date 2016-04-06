@@ -44,6 +44,11 @@ class SiteController extends Controller
                 'class' => 'yii\captcha\CaptchaAction',
                 'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
             ],
+            //根据yii2 p48增加
+            'static'=>[
+                'class' => 'yii\web\ViewAction',
+
+            ],
         ];
     }
 
@@ -108,47 +113,28 @@ class SiteController extends Controller
         return $this->render('info');
     }
 
-    public function actions()
-    {
-        return [
-            'error' => [
-                'class' => 'yii\web\ErrorAction',
-            ],
-            'captcha' => [
-                'class' => 'yii\caption\CaptchaAction',
-                'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
-            ],
-            'pages'=>[
-                'class' => 'yii\web\ViewAction',
-            ],
-
-        ];
-    }
-
-    public function actions()
-    {
-        return [
-            'error' => [
-                'class' => 'yii\web\ErrorAction',
-            ],
-            'captcha' => [
-                'class' => 'yii\captcha\CaptchaAction',
-                'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
-            ],
-            'pages' => [
-                'class' => 'yii\web\ViewAction',
-            ],
-        ];
-    }
-//
 //    public function actions()
 //    {
-//        return[
-//            'pages' =>[
-//                'class'=>'yii\web\ViewAction',
+//        return [
+//            'error' => [
+//                'class' => 'yii\web\ErrorAction',
 //            ],
+//            'captcha' => [
+//                'class' => 'yii\caption\CaptchaAction',
+//                'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
+//            ],
+//            'pages'=>[
+//                'class' => 'yii\web\ViewAction',
+//            ],
+//
 //        ];
 //    }
+
+
+
+
+
+
 }
 
 
