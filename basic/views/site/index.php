@@ -3,9 +3,12 @@
 /* @var $this yii\web\View */
 $this->params['breadcrumbs'][] = 'My website';
 //$this->title = 'My Yii Application';
-$backgroundColor = isset($_REQUEST['bckg'])?$_REQUEST['bckg']:"#FFFFFF";
-$this->params['background_color'] = $backgroundColor;
+//$backgroundColor = isset($_REQUEST['bckg'])?$_REQUEST['bckg']:"#FFFFFF";
+//$this->params['background_color'] = $backgroundColor;
+$backgroundColor = isset($this->params['background_color'])?$this->params['background_color']:'#FFFFFF';
+
 ?>
+<body style="background-color: <?php echo $backgroundColor ?>" >
 <div class="site-index">
 
     <div class="jumbotron">

@@ -45,7 +45,7 @@ class SiteController extends Controller
                 'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
             ],
             //根据yii2 p48增加
-            'static'=>[
+            'pages'=>[
                 'class' => 'yii\web\ViewAction',
 
             ],

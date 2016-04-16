@@ -37,7 +37,21 @@ $config = [
                 ],
             ],
         ],
-        'db' => require(__DIR__ . '/db.php'),
+//根据yii2 example p57 增加url设置
+        'urlManager' => [
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+        ],
+//rules 规则设定
+        'rules' => [
+            'news/<year:\<d{4}>/items-list' => 'news/items-list',
+            [
+                '[pattern' => 'news/<category:\w+>/items-list',
+                'route' => 'news/items-list',
+                'defaults' => ['category' => 'shopping']
+            ]
+//            'news/<category:\w+>items-list' => 'test-rules/items-list',
+        ],
     ],
     'params' => $params,
 ];

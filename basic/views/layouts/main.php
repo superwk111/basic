@@ -55,6 +55,17 @@ AppAsset::register($this);
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
+<!--        ¸ù¾Ýyii2 example P52-->
+        <div class="well">
+            This is content for blockADV from view
+            <br />
+            <?php if(isset($this->blocks['blockADV'])) {?>
+            <?php echo $this->blocks['blockADV']; ?>
+
+            <?php }else{ ?>
+                <i>No content available</i>
+            <?php  } ?>
+        </div>
         <?= $content ?>
     </div>
 </div>
